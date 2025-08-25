@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Simple Quiz</h1>
+
+  <div class="quiz-container" id="quizContainer">
+    <div id="scoreContainer">Score: <span id="score">0</span></div>
+    <div id="timer">Time Left: <span id="timeLeft">15</span>s</div>
+    <div id="question"></div>
+    <div id="options"></div>
+    <div class="quiz-buttons">
+      <button id="nextBtn" disabled>Next Question</button>
+      <button id="endQuizBtn">End Quiz</button>
+    </div>
+  </div>
+
+  <div class="hint">
+    <h3>Fun Hint</h3>
+    <p id="hintText">Answer a question to get a hint...</p>
+  </div>
+
+  <div class="quiz-result" id="quizResult" style="display:none;">
+    <h2>Quiz Completed!</h2>
+    <p>Your Score: <span id="finalScore"></span></p>
+    <p>Percentage: <span id="percentage"></span>%</p>
+    <button id="restartBtn">Restart Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
